@@ -8,13 +8,6 @@ public class Menu2 {
 
     private Scanner scanner = new Scanner(System.in);
     public void run() {
-        //int choice;
-
-        //1 - Affichage du nom et des prénoms.
-//        System.out.println(PURPLE + "***********************");
-//        System.out.println("* " + ALIDA_NAME + " *");
-//        System.out.println("***********************" + RESET);
-//        System.out.println("\n");
 
         //2 - Affichage du titre : Jeu de Pocker et des règles.
         System.out.println("*******************\t\t\t\t\t\tNULL = -10$");
@@ -35,35 +28,5 @@ public class Menu2 {
         System.out.println(PURPLE +"♦       ♥       ♣       ♣       ♦\t\t" +RESET +"**************" + RESET);
         System.out.println("**********************************\n");
         System.out.println("Entrez les cartes a échanger (1, 2, 3, 4, 5) par exemple : \n");
-
-//        do {
-//            System.out.println("**********************");
-//            System.out.println("*   " + YELLOW + "MENU DU POKER" + RESET + "    *");
-//            System.out.println("**********************");
-//            System.out.println("* 1. " + BLUE + "Démarrer le jeu" + RESET + " *");
-//            System.out.println("* 2. " + RED + "Règles du jeu" + RESET + "   *");
-//            System.out.println("* 3. " + YELLOW + "Quitter" + RESET + "         *");
-//            System.out.println("**********************");
-//            System.out.print("Choix : ");
-//            choice = scanner.nextInt();
-//
-//            switch (choice) {
-//                case 1:
-//                    System.out.println("Démarrage du jeu...");
-//                    // Mettez ici le code pour démarrer le jeu
-//                    break;
-//                case 2:
-//                    System.out.println("Règles du jeu :");
-//                    // Mettez ici le code pour afficher les règles du jeu
-//                    break;
-//                case 3:
-//                    System.out.println("Merci d'avoir joué au poker !");
-//                    break;
-//                default:
-//                    System.out.println("Choix invalide. Veuillez choisir à nouveau.");
-//            }
-//        } while (choice != 3);
-
-        //scanner.close();
     }
 }

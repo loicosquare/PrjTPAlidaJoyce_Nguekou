@@ -16,15 +16,6 @@ public class Menu1 {
         System.out.println("***********************" + RESET);
         System.out.println("\n");
 
-//        // Solde initial
-//        System.out.println(BLUE + "\t\t\t\t\t\t\t\t\t\tVous avez 100$ au départ\n" + RESET);
-//
-//        System.out.println("**********************************\t\t**************");
-//        System.out.println(CYAN +"A       D       V       4       5\t\t*" +RESET + GREEN + " GAIN : 100$" + RESET + " *");
-//        System.out.println(PURPLE +"♦       ♥       ♣       ♣       ♦\t\t" +RESET +"**************" + RESET);
-//        System.out.println("**********************************\n");
-//        System.out.println("Entrez les cartes a échanger (1, 2, 3, 4, 5) par exemple : \n");
-
         do {
             System.out.println("**********************");
             System.out.println("*   " + YELLOW + "MENU DU POKER" + RESET + "    *");
