@@ -1,19 +1,22 @@
 
 Ÿ
-java:S1192"WDefine a constant instead of duplicating this literal "**********************" 3 times.(Ì™áıûÿÿÿÿ8Õæ£ä1J$66c2d9ab-8670-4ea6-9e6f-eec04e0b0962
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–…¢ÿÿÿÿÿ8–²Ë¢ä1J$616a4163-59d1-4440-af3a-eabc31137e27
-m	java:S106"+Replace this use of System.out by a logger.(†Ïù8«²Ë¢ä1J$4458ca35-eef3-481f-8b29-686419974fd9
-r	java:S106"+Replace this use of System.out by a logger.(¨‚üÜúÿÿÿÿ8¬²Ë¢ä1J$a4526774-ea25-4a4a-a251-5e5bdfcc8941
-m	java:S106"+Replace this use of System.out by a logger.(º‡ıÄ8¬²Ë¢ä1J$5cab3387-b4c5-4b66-a6e5-e36fd9a60119
-r	java:S106"+Replace this use of System.out by a logger.(ƒÇãˆúÿÿÿÿ8¬²Ë¢ä1J$0775214b-a9fa-4dce-b5f1-8de4c309bdfd
-r	java:S106"+Replace this use of System.out by a logger.(Ì™áıûÿÿÿÿ8½£ş¢ä1J$7d739578-c439-400d-8e11-5edd27294379
-r	java:S106"+Replace this use of System.out by a logger.(ƒæüÇûÿÿÿÿ8½£ş¢ä1J$8c36cf33-649f-40bc-afd3-ce1a270eb045
-r	java:S106"+Replace this use of System.out by a logger.(Ì™áıûÿÿÿÿ8½£ş¢ä1J$c2657886-fd04-4cdc-8f81-e298e4ff77a4
-m	java:S106"+Replace this use of System.out by a logger.(•»ü¢8¿£ş¢ä1J$cca2bab7-ed40-4c82-b3ac-4e9079faafd1
-r	java:S106"+Replace this use of System.out by a logger.(›¤·¾ùÿÿÿÿ8èæ£ä1J$c6c9e51f-2edf-4625-a24d-936c941371de
-m	java:S106"+Replace this use of System.out by a logger.(ËµÃ8èæ£ä1J$591b7ed3-8c06-43d9-ad69-b44121ccde74
-r	java:S106"+Replace this use of System.out by a logger.(Ì™áıûÿÿÿÿ8èæ£ä1J$53c790b7-c3a8-41a6-ae40-efefaefc5313
-l	java:S106"+Replace this use of System.out by a logger.(ÇÓ«8èæ£ä1J$a12c14f6-4370-4ad4-881a-44d3193f697e
-m	java:S106$"+Replace this use of System.out by a logger.(ÿï¼Ü8éæ£ä1J$eb48a1aa-97b4-4e9b-ae68-4a28cac61fbb
-m	java:S106,"+Replace this use of System.out by a logger.(¶‘Æû8éæ£ä1J$278d291f-09e3-460e-8324-ceeaf8ba5bb8
-r	java:S1069"+Replace this use of System.out by a logger.(§ç˜Àüÿÿÿÿ8™Ô£ä1J$0c5cd46a-dbcb-4894-8798-63baee4c7599
+java:S1192"WDefine a constant instead of duplicating this literal "**********************" 3 times.(Ì™áıûÿÿÿÿ8§ğãßä1J$2dcf7e1a-a4a4-48a5-ac92-a80fa6320922
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–…¢ÿÿÿÿÿ8©ğãßä1J$505a5606-cf47-4928-97ab-57fa6eeea7ba
+m	java:S106"+Replace this use of System.out by a logger.(†Ïù8Ñğãßä1J$683ea6c0-d549-4fe0-8f24-e8c17bdf7b26
+r	java:S106"+Replace this use of System.out by a logger.(¨‚üÜúÿÿÿÿ8Ñğãßä1J$da30ce54-3497-4cc2-9fc0-b86738aeece9
+m	java:S106"+Replace this use of System.out by a logger.(º‡ıÄ8Ñğãßä1J$bfa09243-7d0e-4357-87a8-b4eb12d2bd4c
+r	java:S106"+Replace this use of System.out by a logger.(ƒÇãˆúÿÿÿÿ8Òğãßä1J$0bfe2dc1-3f64-4871-84a4-958cbbc05b96
+r	java:S106"+Replace this use of System.out by a logger.(Ì™áıûÿÿÿÿ8Òğãßä1J$85af3a4c-54e9-4a97-8845-e185583328b0
+r	java:S106"+Replace this use of System.out by a logger.(ƒæüÇûÿÿÿÿ8Òğãßä1J$bd1b8d2b-f31e-47f4-86e3-10d7515f2074
+r	java:S106"+Replace this use of System.out by a logger.(Ì™áıûÿÿÿÿ8Òğãßä1J$fe903ce9-b4d0-46c8-897b-97ca4f41436c
+m	java:S106"+Replace this use of System.out by a logger.(•»ü¢8Òğãßä1J$f575c24e-66a1-47a6-80c8-c18dd9e0de8f
+r	java:S106 "+Replace this use of System.out by a logger.(›¤·¾ùÿÿÿÿ8Óğãßä1J$b7749dfc-1644-4453-b938-c9acc681e57b
+m	java:S106!"+Replace this use of System.out by a logger.(ËµÃ8Óğãßä1J$faf92e90-a33a-4606-a5de-508920e61819
+r	java:S106""+Replace this use of System.out by a logger.(Ì™áıûÿÿÿÿ8Óğãßä1J$7dd301e1-1056-48f8-b082-b95acafae874
+l	java:S106#"+Replace this use of System.out by a logger.(ÇÓ«8Óğãßä1J$60abf0e4-d148-4d7c-b758-7fd02600bcbc
+~	java:S125)"<This block of commented-out lines of code should be removed.(àŸìà8×‡àä1J$e059266b-f32f-4356-b502-634508ad66a1
+m	java:S1062"+Replace this use of System.out by a logger.(ÿï¼Ü8Ôğãßä1J$e9cb25b0-7714-4da9-9ed4-5066d50de857
+m	java:S106:"+Replace this use of System.out by a logger.(¶‘Æû8Õğãßä1J$bb9ef9c8-6c4b-4510-bbc8-16ec9086874c
+r	java:S106G"+Replace this use of System.out by a logger.(§ç˜Àüÿÿÿÿ8Öğãßä1J$77a66e3d-c2f2-4fe3-b541-537f3fa8cbe8
+r
+java:S1068"/Remove this unused "gameStarted" private field.(÷¿æ8Ú‡àä1J$f17ce855-968d-4fac-8904-f2a47de3f6cc

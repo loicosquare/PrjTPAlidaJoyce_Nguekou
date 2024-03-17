@@ -6,8 +6,16 @@ import static Constants.Constant.RESET;
 
 public class Menu1 {
 
+    /**
+     * Déclaration des variables globales.
+     */
     private Scanner scanner = new Scanner(System.in);
+
+    //Déclaration de la variable qui permet de savoir si le jeu a commencé.
+    private boolean gameStarted = false;
+
     public void start() {
+        // Variale qui permet de stocker le choix de l'utilisateur.
         int choice;
 
         //1 - Affichage du nom et des prénoms.
@@ -30,6 +38,12 @@ public class Menu1 {
             switch (choice) {
                 case 1:
                     //Si on choisit 1, on appelle le deuxième menu.
+//                    if(!gameStarted) {
+//                        callMenu2();
+//                        gameStarted = true;
+//                    } else {
+//                        System.out.println("Le jeu a déjà commencé.");
+//                    }
                     callMenu2();
                     break;
                 case 2:

@@ -12,6 +12,6 @@ public class Constant {
     public static final String GREEN = "\u001B[32m";
     public static final String PURPLE = "\u001B[35m";
     public static final String CYAN = "\u001B[36m";
-    public static final String ALIDA_NAME = "ALIDA JOYCE NGUEKOU";
+    public static final String ALIDA_NAME = "JOYCE ALIDA NGUEKOU";
     public static final String POKER_TITLE = "Jeu de Poker";
 }
