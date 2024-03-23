@@ -4,7 +4,7 @@ import java.util.Scanner;
 import static Constants.Constant.*;
 import static Constants.Constant.RESET;
 
-public class Menu1 {
+public class MenuOption {
 
     /**
      * Déclaration des variables globales.
@@ -31,7 +31,7 @@ public class Menu1 {
             System.out.println("* 1. " + BLUE + "Démarrer le jeu" + RESET + " *");
             System.out.println("* 2. " + RED + "Règles du jeu" + RESET + "   *");
             System.out.println("* 3. " + YELLOW + "Quitter" + RESET + "         *");
-            System.out.println("**********************");
+            System.out.println("**********************\n");
             System.out.print("Entrez votre choix : ");
             choice = scanner.nextInt();
 
@@ -63,8 +63,8 @@ public class Menu1 {
     }
 
     public static void callMenu2() {
-        Menu2 menu2 = new Menu2();
-        menu2.run();
+        MenuInformations menuInformations = new MenuInformations();
+        menuInformations.run();
     }
 
     public static void exit() {

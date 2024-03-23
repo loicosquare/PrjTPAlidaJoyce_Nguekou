@@ -15,7 +15,7 @@ public class Menu2 {
     public void run() {
 
         //2 - Affichage du titre : Jeu de Pocker et des règles.
-        System.out.println("*******************\t\t\t\t\t\tNULL = -10$");
+        System.out.println("\n\n*******************\t\t\t\t\t\tNULL = -10$");
         System.out.println("** " + CYAN + POKER_TITLE + RESET + " **\t\t\t\t\t\t1 PAIRE = 0$");
         System.out.println("*******************\t\t\t\t\t\t2 PAIRE = 20$");
         System.out.println("\n\t\t\t\t\t\t\t\t\t\tBRELAN (3) = 35$");
@@ -30,7 +30,7 @@ public class Menu2 {
 
         System.out.println("**********************************\t\t**************");
         System.out.println(CYAN +"A       D       V       4       5\t\t*" +RESET + GREEN + " GAIN : 100$" + RESET + " *");
-        System.out.println(PURPLE +"♦       ♥       ♣       ♣       ♦\t\t" +RESET +"**************" + RESET);
+        System.out.println(PURPLE +"♦       ♥       ♣      ♣       ♦\t\t" +RESET +"**************" + RESET);
         System.out.println("**********************************\n");
 
         // Demander à l'utilisateur de choisir les cartes à échanger.
@@ -81,5 +81,15 @@ public class Menu2 {
         }
 
         scanner.close();
+    }
+
+    // Méthode pour demander au joueur de rentrer la position des cartes à changer
+    public int[] demanderCartesAChanger() {
+        int[] positions = new int[5];
+        System.out.println("Entrez les positions des cartes à changer (entre 1 et 5) séparées par des espaces :");
+        for (int i = 0; i < 5; i++) {
+            positions[i] = scanner.nextInt();
+        }
+        return positions;
     }
 }
