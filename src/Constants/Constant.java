@@ -1,5 +1,8 @@
 package Constants;
 
+/**
+ * Classe qui contient les constantes du jeu.
+ */
 public class Constant {
     /**
      * Codes de couleurs ANSI

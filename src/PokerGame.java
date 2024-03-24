@@ -1,38 +1,57 @@
+import Entities.MenuPrincipal;
+import Entities.MenuRegles;
+
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
+import static Constants.Constant.*;
+
+/**
+ * Classe qui représente le jeu de poker.
+ */
 public class PokerGame {
+
+    /**
+     * Constante qui représente le capital de départ du joueur.
+     */
     static final int CAPITAL_DEPART = 100;
+
+    /**
+     * Variable qui représente le capital du joueur.
+     */
     static int capitalJoueur = CAPITAL_DEPART;
+
+    /**
+     * Tableau qui représente le paquet de cartes.
+     */
     static int[] paquet = new int[52];
+
+    /**
+     * Tableau qui représente les symboles des cartes.
+     */
     static char[] sorte = {'♠', '♡', '♢', '♣'};
 
 
+    /**
+     * Point d'entrée de l'application
+     * @param args : tableau de chaînes de caractères qui contient les arguments passés à l'application.
+     */
     public static void main(String[] args) {
-        System.out.println("**************");
-        System.out.println("*Jeu De Poker*");
-        System.out.println("**************");
-        System.out.println("NULL: -10$");
-        System.out.println("1 PAIRE: 0$");
-        System.out.println("2 PAIRES: 20$");
-        System.out.println("BRELAN(3): 35$");
-        System.out.println("SUITE: 50$");
-        System.out.println("FULL(3+2): 75$");
-        System.out.println("COULEUR: 100$");
-        System.out.println("CARRE: 150$");
-        System.out.println("QUINTE ROYALE: 500$");
-        System.out.println("Vous avez " + CAPITAL_DEPART + "$ au départ.");
+
+        //Appel du premier menu.
+        MenuPrincipal menuPrincipal = new MenuPrincipal(); // Création d'une instance de MenuPrincipal.
+        menuPrincipal.start(); // Appel de la méthode run() de l'instance de MenuPrincipal.
 
         Scanner scanner = new Scanner(System.in);
         while (capitalJoueur > 0) {
             jouerUnePartie();
-            System.out.println("Voulez-vous rejouer ? oui/non");
+            System.out.println(ORANGE + "Voulez-vous rejouer ? oui/non" + RESET);
             String choix;
             do {
                 choix = scanner.nextLine();
                 if (!choix.equalsIgnoreCase("oui") && !choix.equalsIgnoreCase("non")) {
-                    System.out.println("Veuillez entrer 'oui' ou 'non'.");
+                    System.out.println(YELLOW + "Veuillez entrer 'oui' ou 'non'." + RESET);
                 }
             } while (!choix.equalsIgnoreCase("oui") && !choix.equalsIgnoreCase("non"));
 
@@ -40,29 +59,37 @@ public class PokerGame {
                 break;
             }
         }
-        System.out.println("Merci d'avoir joué !");
+        System.out.println(GREEN + "Merci d'avoir joué !" + RESET);
     }
 
+    /**
+     * Méthode qui permet de jouer une partie de poker.
+     */
     public static void jouerUnePartie() {
         initialiserPaquet();
         melangerPaquet();
+        System.out.println(CYAN + "Voici vos cartes au début du jeu (Avant changement) :" + RESET);
         afficher5Cartes();
         int nbCartesAChanger = choisirNbCartesAChanger();
         changerCartes(nbCartesAChanger);
         evaluerJeu();
         // Afficher les cartes à la fin de la partie
-        System.out.println("Voici vos cartes à la fin du jeu :");
+        System.out.println(PURPLE + "Voici vos cartes à la fin du jeu (Après changement) :" + RESET);
         afficher5Cartes();
     }
 
-
-
+    /**
+     * Méthode qui permet d'initialiser le paquet de cartes.
+     */
     public static void initialiserPaquet() {
         for (int i = 0; i < paquet.length; i++) {
             paquet[i] = i;
         }
     }
 
+    /**
+     * Méthode qui permet de mélanger le paquet de cartes.
+     */
     public static void melangerPaquet() {
         Random random = new Random();
         for (int i = 0; i < paquet.length; i++) {
@@ -73,26 +100,40 @@ public class PokerGame {
         }
     }
 
-    public static void afficher5Cartes() {
-        System.out.println("Voici vos cartes :");
+    /**
+     * Méthode qui permet d'afficher les 5 cartes du joueur.
+     */
+    /*public static void afficher5Cartes() {
+        //System.out.println(PURPLE + "Voici vos cartes :" + RESET);
         for (int i = 0; i < 5; i++) {
             int sorteIndex = paquet[i] / 13;
             int valeur = paquet[i] % 13 + 1;
             System.out.println(valeur + " " + getSymbole(sorteIndex));
         }
-    }
-
-    // afficher le tableau à la fin du jeu
-
-    public static void afficherTableauApresChangement(){
-        System.out.println("Voici vos cartes Apres changement :");
+    }*/
+    public static void afficher5Cartes() {
+        System.out.println("*****************");
+        System.out.print(CYAN);
         for (int i = 0; i < 5; i++) {
             int sorteIndex = paquet[i] / 13;
-            int valeur = paquet[i];
-            System.out.println(valeur + " " + getSymbole(sorteIndex));
+            int valeur = paquet[i] % 13 + 1;
+            System.out.print(getSymbole(sorteIndex) + "\t");
         }
+        System.out.println(PURPLE);
+        for (int i = 0; i < 5; i++) {
+            int sorteIndex = paquet[i] / 13;
+            int valeur = paquet[i] % 13 + 1;
+            System.out.print(valeur + "\t");
+        }
+        System.out.println("\t\t" + RESET);
+        System.out.println("*****************\n");
     }
 
+    /**
+     * Méthode qui permet de retourner le symbole d'une carte.
+     * @param index : l'index de la carte.
+     * @return : le symbole de la carte.
+     */
     public static String getSymbole(int index) {
         switch (index) {
             case 0:
@@ -108,33 +149,57 @@ public class PokerGame {
         }
     }
 
+    /**
+     * Méthode qui permet de choisir le nombre de cartes à changer.
+     * @return : le nombre de cartes à changer.
+     */
     public static int choisirNbCartesAChanger() {
         Scanner scanner = new Scanner(System.in);
         int nbCartes;
         do {
-            System.out.println("Combien de cartes souhaitez-vous changer ? (0-4)");
+            System.out.println(CYAN + "Combien de cartes souhaitez-vous changer ? (0-4)" + RESET);
+            // Vérifier si le prochain élément est un entier
+            while (!scanner.hasNextInt()) {
+                System.out.println(RED + "Veuillez entrer un nombre valide." + RESET);
+                // Vider la ligne de saisie pour permettre à l'utilisateur de saisir à nouveau
+                scanner.next();
+            }
             nbCartes = scanner.nextInt();
         } while (nbCartes < 0 || nbCartes > 4);
         return nbCartes;
     }
 
+    /**
+     * Méthode qui permet de changer les cartes du joueur.
+     * @param nbCartesAChanger : le nombre de cartes à changer.
+     */
     public static void changerCartes(int nbCartesAChanger) {
         if (nbCartesAChanger == 0) {
             return;
         }
         Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < nbCartesAChanger; i++) {
-            System.out.println("Entrez le numéro de la carte " + (i + 1) + " à changer (1-5) : ");
-            int index = scanner.nextInt() - 1;
-            if(index < 0 || index >= 5) {
-                System.out.println("Numéro de carte invalide. Veuillez entrer un numéro de carte entre 1 et 5.");
-                i--;
-                continue;
-            }
+            int index;
+            do {
+                System.out.println(CYAN + "Entrez le numéro de la carte " + (i + 1) + " à changer (1-5) : " + RESET);
+                // Vérifier si le prochain élément est un entier
+                while (!scanner.hasNextInt()) {
+                    System.out.println(RED + "Veuillez entrer un nombre valide." + RESET);
+                    scanner.next(); // Vider la ligne de saisie pour permettre à l'utilisateur de saisir à nouveau
+                }
+                index = scanner.nextInt() - 1;
+                if (index < 0 || index >= 5) {
+                    System.out.println(RED + "Numéro de carte invalide. Veuillez entrer un numéro de carte entre 1 et 5." + RESET);
+                }
+            } while (index < 0 || index >= 5);
             paquet[index] = paquet[5 + i];
         }
     }
 
+
+    /**
+     * Méthode qui permet d'évaluer le jeu du joueur.
+     */
     public static void evaluerJeu() {
         int[] valeurs = new int[5];
         int[] sortes = new int[5];
@@ -143,13 +208,16 @@ public class PokerGame {
             valeurs[i] = paquet[i] % 13 + 1;
             sortes[i] = paquet[i] / 13;
         }
-
         Arrays.sort(valeurs);
 
         Afficher$(valeurs, sortes);
-
     }
 
+    /**
+     * Méthode qui permet d'afficher le gain du joueur.
+     * @param valeurs : tableau des valeurs des cartes.
+     * @param sortes : tableau des sortes des cartes.
+     */
     public static void Afficher$(int[] valeurs, int[] sortes){
 
         boolean toutesDifferentes = valeurs[0] != valeurs[1] && valeurs[1] != valeurs[2] && valeurs[2] != valeurs[3] && valeurs[3] != valeurs[4];
@@ -165,33 +233,34 @@ public class PokerGame {
         int gain = 0;
         if (quinteRoyale) {
             gain = 500;
-            System.out.println("Quinte Royale ! Vous avez gagné $500");
+            System.out.println(BLUE + "Quinte Royale ! Vous avez gagné $500 \n" + RESET);
         } else if (carre) {
             gain = 150;
-            System.out.println("Carré ! Vous avez gagné $150");
+            System.out.println(ORANGE + "Carré ! Vous avez gagné $150 \n" + RESET);
         } else if (couleur) {
             gain = 100;
-            System.out.println("Couleur ! Vous avez gagné $100");
+            System.out.println(ORANGE + "Couleur ! Vous avez gagné $100 \n" + RESET);
         } else if (full) {
             gain = 75;
-            System.out.println("Full ! Vous avez gagné $75");
+            System.out.println(GREEN + "Full ! Vous avez gagné $75 \n" + RESET);
         } else if (suite) {
             gain = 50;
-            System.out.println("Suite ! Vous avez gagné $50");
+            System.out.println(GREEN + "Suite ! Vous avez gagné $50 \n" + RESET);
         } else if (brelan) {
             gain = 35;
-            System.out.println("Brelan ! Vous avez gagné $35");
+            System.out.println(GREEN + "Brelan ! Vous avez gagné $35 \n" + RESET);
         } else if (deuxPaires) {
             gain = 20;
-            System.out.println("Deux Paires ! Vous avez gagné $20");
+            System.out.println(GREEN + "Deux Paires ! Vous avez gagné $20 \n" + RESET);
         } else if (unePaire) {
             gain = 0;
-            System.out.println("Une Paire ! Vous avez gagné $0");
+            System.out.println(GREEN + "Une Paire ! Vous avez gagné $0 \n" + RESET);
         } else {
             gain = -10;
-            System.out.println("Perdu ! Vous avez perdu $10");
+            System.out.println(RED + "Perdu ! Vous avez perdu $10 \n" + RESET);
         }
 
         capitalJoueur += gain;
+        System.out.println(YELLOW + "Votre capital est de : " + capitalJoueur + "$\n");
     }
 }

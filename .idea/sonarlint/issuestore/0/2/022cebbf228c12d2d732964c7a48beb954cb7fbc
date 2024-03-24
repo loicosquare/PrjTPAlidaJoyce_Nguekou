@@ -1,0 +1,46 @@
+
+]
+java:S1220""Move this file to a named package.8ÿ‹§Šç1J$4ba634d2-98e3-45c6-995e-7814935058cc
+r	java:S1061"+Replace this use of System.out by a logger.(ßÁ™üÿÿÿÿ8¹§Šç1J$8c5ee58a-3a79-472f-9a30-0144761e4397
+m	java:S1066"+Replace this use of System.out by a logger.(„¿8º§Šç1J$b2ce475f-9eef-42fe-b27c-825ddaf01786
+r	java:S106>"+Replace this use of System.out by a logger.(ÓŠèùüÿÿÿÿ8º§Šç1J$8a9ea866-01d5-43bc-afb6-4c268335f825
+r	java:S106G"+Replace this use of System.out by a logger.(¿Çùéıÿÿÿÿ8»§Šç1J$196787d5-388a-446b-ad7a-6a5c4772cc83
+r	java:S106M"+Replace this use of System.out by a logger.(ÀÇÃèşÿÿÿÿ8¼§Šç1J$76024e67-9b9a-4171-80c8-f8479f530ecd
+`
+java:S2119^"Save and re-use this "Random".(¼İÅf8À§Šç1J$301a0053-8df4-417d-9093-77699251dff3
+‚
+java:S1854w":Remove this useless assignment to local variable "valeur".(¤×œŒúÿÿÿÿ8Â§Šç1J$adfd9629-6ff3-4393-9480-cdebdc361139
+†
+java:S1854|">Remove this useless assignment to local variable "sorteIndex".(„ôÚóıÿÿÿÿ8Â§Šç1J$e8706e7c-06d9-4dbe-9e24-09eb0645a794
+ƒ	java:S125j"<This block of commented-out lines of code should be removed.(Ú°÷Óşÿÿÿÿ8Ã§Šç1J$1f3af48d-65ae-48eb-b69b-0f13dd8ff783
+r	java:S106s"+Replace this use of System.out by a logger.(Ÿ‰û§şÿÿÿÿ8Ä§Šç1J$2cd3bd29-12c5-4a50-b6af-367ca46c78b9
+r	java:S106t"+Replace this use of System.out by a logger.(çÂ¸¨ÿÿÿÿÿ8Æ§Šç1J$dbcd85b3-5e63-479a-a9fc-4f63975f1c99
+s
+java:S1481w"+Remove this unused "valeur" local variable.(¤×œŒúÿÿÿÿ8Å§Šç1J$466fa7a3-bbf6-4bbe-89a7-1a298e2939eb
+m	java:S106x"+Replace this use of System.out by a logger.(‹§€8·ëÂŠç1J$60803da5-37ac-4d00-8224-f6471da2ad9b
+r	java:S106z"+Replace this use of System.out by a logger.(½Ÿ‰‹ùÿÿÿÿ8¹ëÂŠç1J$c451c8de-9b1a-4cd7-af26-595db3fc7d78
+w
+java:S1481|"/Remove this unused "sorteIndex" local variable.(„ôÚóıÿÿÿÿ8Æ§Šç1J$0618e99d-6e6f-413a-b421-6ce990a7322c
+m	java:S106~"+Replace this use of System.out by a logger.(Ç¾ÑÜ8»ëÂŠç1J$526c56fa-4057-4aba-8ed4-66f6149839ea
+n	java:S106€"+Replace this use of System.out by a logger.(½…¬ù8¿ëÂŠç1J$6e754e01-fa89-419b-a507-c01b6d465a8b
+s	java:S106"+Replace this use of System.out by a logger.(§ àıÿÿÿÿ8ÀëÂŠç1J$f4368af5-2033-417f-91c3-7cd5e0e10232
+s	java:S106 "+Replace this use of System.out by a logger.(ÜË¼Æÿÿÿÿÿ8ÆëÂŠç1J$914c5825-3798-484a-933e-83e310b41442
+n	java:S106£"+Replace this use of System.out by a logger.(Í±¢ò8ÇëÂŠç1J$4b73b166-7770-4c53-b174-567d43ffbdb9
+s	java:S106¸"+Replace this use of System.out by a logger.(ÁÍ·³ûÿÿÿÿ8ÇëÂŠç1J$306a1c51-ec26-44bf-aa19-e498a5f20e1f
+n	java:S106»"+Replace this use of System.out by a logger.(Í±¢ò8ÈëÂŠç1J$5e13108c-52d0-47d2-b0c5-e60891eaf125
+s	java:S106À"+Replace this use of System.out by a logger.(ÚƒĞîùÿÿÿÿ8ËëÂŠç1J$bc883b56-2f6e-4977-9f00-6d201c1cbe49
+–	java:S100İ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸİÒµûÿÿÿÿ8ÂëÂŠç1J$c937b184-64d6-470f-8dc9-83fa367a4f13
+›
+java:S3776İ"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(ŸİÒµûÿÿÿÿ8ÄëÂŠç1J$be6d62ce-e9ff-47d2-ba0a-e6e1540e7633
+n	java:S106ì"+Replace this use of System.out by a logger.(¶Ëé¬8ÕˆÄŠç1J$0bbe1b16-bf04-4781-aebf-7c695ed3e21a
+n	java:S106ï"+Replace this use of System.out by a logger.(ç˜ñõ8ÖˆÄŠç1J$8badf574-5fbc-4b42-8bc3-21d324e6e9ab
+s	java:S106ò"+Replace this use of System.out by a logger.(—Çâøÿÿÿÿ8ÖˆÄŠç1J$b15df8e9-b623-4e44-a137-21baf815fdbc
+m	java:S106õ"+Replace this use of System.out by a logger.(˜ÑÀ8ÖˆÄŠç1J$8a0cf863-9690-464c-a8c4-423b384faf73
+m	java:S106ø"+Replace this use of System.out by a logger.(Í½É)8ÖˆÄŠç1J$0403124a-615f-40e8-a34a-9a4f53048ec7
+s	java:S106û"+Replace this use of System.out by a logger.(Âá«¶ùÿÿÿÿ8– ÎŠç1J$4fc23416-e433-41dc-9360-3f9fa0c07ef4
+n	java:S106ş"+Replace this use of System.out by a logger.(¾Ÿü¿8ºœÏŠç1J$b7dae1e8-20e9-4a47-8050-559b4fc635f8
+n	java:S106"+Replace this use of System.out by a logger.(“ÛÛŞ8ÈÒŠç1J$5c75b554-cfe4-42b5-bdb5-75c1ac7ee86e
+n	java:S106„"+Replace this use of System.out by a logger.(˜ÍõÃ8‹ÜÖŠç1J$349a7cd0-348b-4925-be91-9e4fdd5aa633
+n	java:S106ˆ"+Replace this use of System.out by a logger.(ù”‡8€îÖŠç1J$77860e3a-053e-4f45-9245-90146d406a76
+x
+java:S1128"0Remove this unused import 'Entities.MenuRegles'.(„²èûùÿÿÿÿ8Û§Šç1J$b483f438-b4f1-4126-bbfd-ffdb6a9504dc

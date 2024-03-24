@@ -1,0 +1,19 @@
+
+Ÿ
+java:S1192"WDefine a constant instead of duplicating this literal "**********************" 3 times.(Ì™áıûÿÿÿÿ8™áì‰ç1J$2cc04d2c-d6cb-4c78-a075-d9824f54e4d8
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–…¢ÿÿÿÿÿ8ÙÉì‰ç1J$0e9b5d11-ffd7-42f6-b26d-f1a19a319eeb
+m	java:S106"+Replace this use of System.out by a logger.(†Ïù8©àò‰ç1J$68e0f118-4ab6-4a9d-ae21-bd3fb8035981
+r	java:S106"+Replace this use of System.out by a logger.(¨‚üÜúÿÿÿÿ8ªàò‰ç1J$d4643f54-96b9-46be-8b63-f7ed3b491e3c
+m	java:S106"+Replace this use of System.out by a logger.(º‡ıÄ8ªàò‰ç1J$5453ab60-7272-407e-99ae-1f36196e9093
+r	java:S106"+Replace this use of System.out by a logger.(ƒÇãˆúÿÿÿÿ8«àò‰ç1J$1ac998c5-6576-47d5-b767-858976c10821
+r	java:S106"+Replace this use of System.out by a logger.(Ì™áıûÿÿÿÿ8¬àò‰ç1J$c597d2e8-d4a1-4d03-8668-31b7f0d9bfe1
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(Ü•—Óûÿÿÿÿ8¬àò‰ç1J$2515765a-55d1-4af7-b64c-439cf28874cf
+r	java:S106 "+Replace this use of System.out by a logger.(ƒæüÇûÿÿÿÿ8­àò‰ç1J$c4e0e08a-6ef3-457f-936a-fb941c1b3727
+r	java:S106!"+Replace this use of System.out by a logger.(Ì™áıûÿÿÿÿ8­àò‰ç1J$d298009e-2ef9-44c6-aa2a-8aaecbc607ea
+m	java:S106""+Replace this use of System.out by a logger.(•»ü¢8­àò‰ç1J$f646edbe-1a9e-4323-8d43-27f8e85352fe
+r	java:S106#"+Replace this use of System.out by a logger.(ûƒüÎøÿÿÿÿ8­àò‰ç1J$c511d186-7f46-4707-a77a-290d190d6690
+r	java:S106$"+Replace this use of System.out by a logger.(Ì™áıûÿÿÿÿ8­àò‰ç1J$ca9ab1db-3649-4e97-87e5-4176ec85fb2b
+l	java:S106%"+Replace this use of System.out by a logger.(ÇÓ«8®àò‰ç1J$fac53d7e-14b7-4bd1-8c96-d7c16060b058
+m	java:S1062"+Replace this use of System.out by a logger.(¶‘Æû8¯àò‰ç1J$e3fe75ba-be50-4632-a66e-e0e5fd60681c
+~	java:S1254"<This block of commented-out lines of code should be removed.(˜¨¹ª8¯àò‰ç1J$f87fae36-f4fc-48c8-a00d-6f1be6353d3a
+r	java:S106E"+Replace this use of System.out by a logger.( ˆ¼ùÿÿÿÿ8±àò‰ç1J$de70ed73-d943-4dac-aba1-4f64acd88d53
