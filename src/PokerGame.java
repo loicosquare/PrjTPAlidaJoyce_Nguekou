@@ -23,6 +23,11 @@ public class PokerGame {
     static int capitalJoueur = CAPITAL_DEPART;
 
     /**
+     * Variable qui représente le capital restant du joueur.
+     */
+    static int capitalRestant;
+
+    /**
      * Tableau qui représente le paquet de cartes.
      */
     static int[] paquet = new int[52];
@@ -38,13 +43,15 @@ public class PokerGame {
      * @param args : tableau de chaînes de caractères qui contient les arguments passés à l'application.
      */
     public static void main(String[] args) {
+        // Initialiser le capital avec le capital de départ au début du jeu.
+        capitalJoueur = CAPITAL_DEPART;
 
         //Appel du premier menu.
         MenuPrincipal menuPrincipal = new MenuPrincipal(); // Création d'une instance de MenuPrincipal.
         menuPrincipal.start(); // Appel de la méthode run() de l'instance de MenuPrincipal.
 
         Scanner scanner = new Scanner(System.in);
-        while (capitalJoueur > 0) {
+        while (capitalJoueur >= 0) {
             jouerUnePartie();
             System.out.println(ORANGE + "Voulez-vous rejouer ? oui/non" + RESET);
             String choix;
@@ -57,6 +64,9 @@ public class PokerGame {
 
             if (choix.equalsIgnoreCase("non")) {
                 break;
+            } else {
+                // Mettre à jour le capital restant avec la valeur actuelle du capitalJoueur.
+                capitalRestant = capitalJoueur;
             }
         }
         System.out.println(GREEN + "Merci d'avoir joué !" + RESET);
@@ -66,6 +76,9 @@ public class PokerGame {
      * Méthode qui permet de jouer une partie de poker.
      */
     public static void jouerUnePartie() {
+        // Réinitialiser le capital du joueur avec le capital restant.
+        //capitalJoueur = capitalRestant;
+        System.out.println(YELLOW + "Votre capital est de : " + capitalJoueur + "$\n" + RESET);
         initialiserPaquet();
         melangerPaquet();
         System.out.println(CYAN + "Voici vos cartes au début du jeu (Avant changement) :" + RESET);
@@ -103,14 +116,6 @@ public class PokerGame {
     /**
      * Méthode qui permet d'afficher les 5 cartes du joueur.
      */
-    /*public static void afficher5Cartes() {
-        //System.out.println(PURPLE + "Voici vos cartes :" + RESET);
-        for (int i = 0; i < 5; i++) {
-            int sorteIndex = paquet[i] / 13;
-            int valeur = paquet[i] % 13 + 1;
-            System.out.println(valeur + " " + getSymbole(sorteIndex));
-        }
-    }*/
     public static void afficher5Cartes() {
         System.out.println("*****************");
         System.out.print(CYAN);
@@ -156,16 +161,23 @@ public class PokerGame {
     public static int choisirNbCartesAChanger() {
         Scanner scanner = new Scanner(System.in);
         int nbCartes;
+        System.out.println("Combien de cartes souhaitez-vous changer ? (0-4)");
         do {
-            System.out.println(CYAN + "Combien de cartes souhaitez-vous changer ? (0-4)" + RESET);
             // Vérifier si le prochain élément est un entier
             while (!scanner.hasNextInt()) {
-                System.out.println(RED + "Veuillez entrer un nombre valide." + RESET);
+                System.out.println("Veuillez entrer un nombre valide.");
                 // Vider la ligne de saisie pour permettre à l'utilisateur de saisir à nouveau
                 scanner.next();
             }
             nbCartes = scanner.nextInt();
+            if (nbCartes < 0 || nbCartes > 4) {
+                System.out.println("Veuillez entrer un nombre entre 0 et 4.");
+            } else if (nbCartes == 0) {
+                System.out.println("Vous avez décidé de ne changer aucune carte.");
+                break;
+            }
         } while (nbCartes < 0 || nbCartes > 4);
+
         return nbCartes;
     }
 
